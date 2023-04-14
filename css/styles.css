@@ -224,7 +224,7 @@ button {
   |============================
 */
 .feature-section {
-  padding: 120px 0;
+  padding-bottom: 0;
 }
 .feature-container {
   display: flex;
@@ -255,9 +255,6 @@ button {
   | EXAMPLES
   |============================
 */
-.examples-section {
-  padding-top: 0;
-}
 .examples-list {
   display: flex;
   gap: 24px;
@@ -274,7 +271,7 @@ button {
   |============================
 */
 
-.sector-title {
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -326,6 +323,41 @@ button {
 
 /**
   |============================
+  | CLIENTS
+  |============================
+*/
+.clients-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.clients-item {
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--ocean);
+  border-color: var(--ocean);
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
+/**
+  |============================
   | FOOTER
   |============================
 */
@@ -338,6 +370,7 @@ button {
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 0;
 }
 
 .footer-desc {
@@ -356,9 +389,8 @@ button {
 */
 
 .portfolio-section {
-  padding: 96px 120px;
-  /* padding-top: 96px;
-   padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 /**
