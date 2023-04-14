@@ -99,6 +99,8 @@ button {
 }
 .border-bottom {
   border-bottom: 1px solid var(--cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -176,6 +178,18 @@ button {
   background-color: var(--navy-blue-modal);
   padding-top: 188px;
   padding-bottom: 188px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bg-image/people-office.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   /* text-align: center; */
 }
 
@@ -229,6 +243,21 @@ button {
 .feature-container {
   display: flex;
   gap: 24px;
+}
+
+.feature-icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--cloud);
+
+  height: 112px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.feature-icon {
 }
 
 .feature-list-title {
@@ -294,13 +323,13 @@ button {
 
 .card-content {
   padding: 32px 16px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list {
   background-color: var(--white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-members-names {
@@ -321,6 +350,34 @@ button {
   letter-spacing: 0.02em;
 }
 
+.team-icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  margin-top: 8px;
+}
+
+.team-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--cloud);
+  background-color: var(--iris);
+}
+
+.team-icon {
+  fill: currentColor;
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+  background-color: var(--ocean);
+}
 /**
   |============================
   | CLIENTS
@@ -339,6 +396,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  color: var(--light-slate);
 
   width: 168px;
   height: 88px;
@@ -363,8 +422,15 @@ button {
 */
 .footer {
   background-color: var(--navy-blue-modal);
+
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  gap: 120px;
 }
 
 .logo-footer {
@@ -377,11 +443,49 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--cloud);
+  color: var(--white);
 
   width: 264px;
 }
 
+.footer-socials-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--white);
+}
+
+.footer-icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  margin-top: 16px;
+}
+
+.footer-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #424355;
+  /* opacity: 0.1; */
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--green);
+}
+
+.footer-icon {
+  fill: currentColor;
+}
 /*
   |============================
   | PORTFOLIO
@@ -454,6 +558,12 @@ button {
   border-bottom: 1px solid var(--cornflower);
   border-left: 1px solid var(--cornflower);
   border-right: 1px solid var(--cornflower);
+}
+
+.card-projects-content:hover,
+.card-projects-content:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-title {
