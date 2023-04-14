@@ -312,10 +312,6 @@ button {
   margin-bottom: 72px;
 }
 
-.team-card-container {
-  padding: 32px 0;
-}
-
 .team-section {
   background-color: var(--cloud);
 }
@@ -326,7 +322,7 @@ button {
 }
 
 .card-content {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .team-list {
